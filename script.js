@@ -172,4 +172,21 @@ revealBtn.onclick = function () {
 
     alert("Birthday plan unlocked ❤️");
 
+const revealBtn = document.getElementById("revealBtn");
+
+if (revealBtn) {
+    revealBtn.addEventListener("click", () => {
+
+        document.getElementById("page5").classList.remove("active");
+
+        document.getElementById("page6").classList.add("active");
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+}
+
 };

@@ -430,7 +430,38 @@ input {
 
 /* Mobile */
 
-@media (max-width: 600px) {
+@media (max-width: 600px) 
+/* ================= FIX PAGE 6 SCROLL ================= */
+
+body:has(#page6.active) {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    height: auto !important;
+    min-height: 100vh;
+    align-items: flex-start;
+}
+
+#page6 {
+    position: relative !important;
+    width: 100%;
+    min-height: 100vh;
+    height: auto !important;
+
+    display: flex !important;
+
+    overflow: visible !important;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 30px 15px 60px;
+}
+
+#page6 .plan-card {
+    margin: 20px auto 40px;
+}
+{
+    
 
     .plan-card {
         padding: 30px 15px;
